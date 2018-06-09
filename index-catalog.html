@@ -18,7 +18,9 @@
           <li class="contact"><a href="contact.html">Контакты</a></li>
         </ul>
         <ul class="cart">
-          <li><a href="cart.html">Корзина</a></li>
+          <li class="cart-link">
+            <a class="cart-link" href="cart.html">Корзина</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -30,7 +32,60 @@
     
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=pricecount.value">
+          <p class="price">Стоимость:</p>
+          <input type="range" id="pricecount" name="pricecount" min="0" max="15000">
+          <div class="half-width">
+            ОТ <input type="type" min="0" max="15000" id="amount" name="amount">
+          </div>
+          <div class="half-width output-area">
+            ДО <output name="priceoutput" value="15000"></output>
+          </div>
+          
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive">
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="fixing" id="filter-fix" checked>
+                <label for="filter-fix">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="rubber" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="with slider" id="filter-with slider" checked>
+                <label for="filter-with slider">Слайдер</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="block of advantage" id="filter-block of advantage">
+                <label for="filter-block of advantage">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="block of news" id="filter-block of news" checked>
+                <label for="filter-block of news">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="with cart" id="filter-with cart">
+                <label for="filter-wuth cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
       
       <section class="sort">
@@ -95,8 +150,9 @@
     <footer class="main-footer">
       
       <section class="main-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
         <div class="map">
-          <img src="img/map.png" alt="Карта" width="1440" height="415">
+          <img src="img/map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1440" height="415">
         </div>
         <div class="contact">
           <h3>NERDS DESIGN STUDIO</h3>
