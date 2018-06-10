@@ -34,12 +34,14 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=pricecount.value">
           <p class="price">Стоимость:</p>
-          <input type="range" id="pricecount" name="pricecount" min="0" max="15000">
+          <div class="range-line">
+            <input type="range" id="pricecount" name="pricecount" min="0" max="15000">
+          </div>
           <div class="half-width">
-            ОТ <input type="type" min="0" max="15000" id="amount" name="amount">
+            ОТ <input type="type" min="0" max="15000" id="amount" name="amount" value="0">
           </div>
           <div class="half-width output-area">
-            ДО <output name="priceoutput" value="15000"></output>
+            ДО <input name="priceoutput" value="15000">
           </div>
           
           <fieldset>
@@ -180,4 +182,3 @@
     </footer>
   </body>
 </html>
-      
