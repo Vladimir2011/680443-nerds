@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-head-logo">
-          <img src="img/logo.svg" width="170" height="90" alt="Логотип студии «Нёрдс»">
+        <a class="main-head-logo href" href="#">
+          <img src="img/logo.svg" width="170" height="90" alt="Логотип студии «Нёрдс»" class="logo">
         </a>
         <ul class="site-navigation">
           <li class="studio"><a href="studio.html">Студия</a></li>
@@ -25,7 +27,7 @@
       </nav>
     </header>
     <main class="container">
-        
+     <div class="index-column">
       <h1 class="visually-hidden">Студия Нёрдс</h1>
         
       <section class="slider">
@@ -45,10 +47,21 @@
           <li class="feature-list">
             <h2 class="features-description">Только ночь,только хардкор</h2>
             <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="button" href="features.html">Узнать больше</a>
             <img src="img/slide3.png" width="759" height="411" alt="Третий Слайдер">
           </li>
         </ul>
       </section>
+      
+      <div class="slider-indicator">
+        <label for="slider-id" class="vissually-hidden">Слайд 1</label>
+        <input type="radio" name="slide-group" value="slide1" id="slide-id" checked class="button slider-indicator-1 current-slider">
+        <label for="slide2-id" class="visually-hidden">Слайд 2</label>
+        <input type="radio" name="slide-group" value="slide2" id="slide-id" class="button slider-indicator-2">
+        <label for="slide3-id" class="visually-hidden">Слайд 3</label>
+        <input type="radio" name="slide-group" value="slide3" id="slide3-id" class="button slider-indicator-3">
+      </div>
+     </div>
       
       <section class="assortment">
         <div class="assortment-item">
@@ -63,25 +76,25 @@
           <div class="apps-img">
             <img src="img/apps.png" alt="Приложения" width="300" height="145">
           </div>
-          <h3 class="Apps">Приложения</h3>
+          <h3 class="apps">Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="button" href="assortment.html">Заказать</a>
+          <a class="button-apps" href="assortment.html">Заказать</a>
         </div>
         <div class="assortment-item">
           <div class="presentation-img">
             <img src="img/presentation.png" alt="Презентации" width="300" height="145">
           </div>
-          <h3 class="Presentation">Презентации</h3>
+          <h3 class="presentation">Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="button" href="assortment.html">Заказать</a>
+          <a class="button-pres" href="assortment.html">Заказать</a>
         </div>
-      </section>
+    </section>
       
       <section class="about-us">
         <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         
-        <p>Выполняем заказы на разработку:</p>
+        <p class="work">Выполняем заказы на разработку:</p>
         <ul class="order">
           <li class="order-item">Веб-сайтов любой сложности</li>
           <li class="order-item">Мобильных приложений для IOS и Android</li>
@@ -99,9 +112,9 @@
             <th>50<sup>%</sup></th>
           </tr>
           <tr class="offer-1">
-            <th>Уровень самоотдачи</th>
-            <th>Соблюдение сроков</th>
-            <th>Минимальная предоплата</th>
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
           </tr>
         </table>
       </section>
@@ -109,20 +122,21 @@
       <section class="campaigns">
         <ul class="friends">
           <li class="friend-1">
-            <img src="img/logo-1.png" alt="HTML Academy" width="260" height="180">
+            <img src="img/logo-1.png" alt="HTML Academy" width="260" height="180" class="logo-1">
           </li>
           <li class="friend-2">
-            <img src="img/logo-2.png" alt="Borodinsky" width="260" height="180">
+            <img src="img/logo-2.png" alt="Borodinsky" width="260" height="180" class="logo-2">
           </li>
           <li class="friend-3">
-            <img src="img/logo-3.png" alt="PINK" width="260" height="180">
+            <img src="img/logo-3.png" alt="PINK" width="260" height="180" class="logo-3">
           </li>
           <li class="friend-4">
-            <img src="img/logo-4.png" alt="MISHKA" width="260" height="180">
+            <img src="img/logo-4.png" alt="MISHKA" width="260" height="180" class="logo-4">
           </li>
         </ul>
       </section>
     </main>
+
     
     <footer class="main-footer">
       
@@ -144,16 +158,36 @@
       </section>  
       
       <div class="footer-social">
-        <ul>
+        <ul class="social">
           <li><a class="social-button" href="#">Вконтакте</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
       </div>
-      <p class="footer-copyright">
+      <div class="footer-copyright">
         <b>Давайте дружить, это выгодно!</b> 
         <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
       
+      <section class="pop-up">
+        <h2>Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p class="appointment-item">
+            <label class="visually-hidden" for="user-name">Ваше имя:</label>
+            <input class="name-icon-user" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="appointment-item">
+            <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
+            <input class="name-icon-password" id="user-email" type="text" name="email" placeholder="email@example.com">
+          </p>
+          <p class="appointment-item">
+            <label class="visually-hidden" for="comment-field">Текст письма:</label>
+            <textarea name="comment" id="comment-field" rows="10" cols="100" placeholder="В свободной форме"></textarea>
+          </p>
+            <br> <input type="submit" value="Отправить">
+            <button class="modal-close" type="button">Закрыть</button>
+        </form>
+      </section>
     </footer>
   </body>
 </html>

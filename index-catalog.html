@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-head-logo">
-          <img src="img/logo.svg" width="170" height="90" alt="Логотип студии «Нёрдс»">
+        <a class="main-head-logo" href="#">
+          <img src="img/logo.svg" width="170" height="90" alt="Логотип студии «Нёрдс»" class="logo">
         </a>
         <ul class="site-navigation">
           <li class="studio"><a href="studio.html">Студия</a></li>
@@ -46,7 +48,7 @@
           
           <fieldset>
             <legend>Сетка:</legend>
-            <ul>
+            <ul class="filters-net">
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive">
                 <label for="filter-adaptive">Адаптивная</label>
@@ -63,7 +65,7 @@
           </fieldset>
           <fieldset>
             <legend>Особенности:</legend>
-            <ul>
+            <ul class="filter-features">
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="with slider" id="filter-with slider" checked>
                 <label for="filter-with slider">Слайдер</label>
@@ -93,7 +95,7 @@
       <section class="sort">
         <p><b>Сортировать:</b></p>
         <ul class="sort-list">
-          <li class="sort-item">
+          <li class="sort-item-current">
           <p>По цене:</p></li>
           <li class="sort-item">
           <p>По типу:</p></li>
@@ -179,6 +181,25 @@
         <b>Давайте дружить, это выгодно!</b> 
         <p>Скидка 10% для друзей из социальных сетей.</p>
       
+      <section class="pop-up">
+        <h2>Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p class="appointment-item">
+            <label class="visually-hidden" for="user-name">Ваше имя:</label>
+            <input class="name-icon-user" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="appointment-item">
+            <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
+            <input class="name-icon-password" id="user-email" type="text" name="email" placeholder="email@example.com">
+          </p>
+          <p class="appointment-item">
+            <label class="visually-hidden" for="comment-field">Текст письма:</label>
+            <textarea name="comment" id="comment-field" rows="10" cols="100" placeholder="В свободной форме"></textarea>
+          </p>
+            <br> <input type="submit" value="Отправить">
+            <button class="modal-close" type="button">Закрыть</button>
+        </form>
+      </section>
     </footer>
   </body>
 </html>
