@@ -25,13 +25,14 @@
           </li>
         </ul>
       </nav>
-    </header>
-    
-    <main class="container">
+ 
       <section class="title">
         <h1 class="page-title">Магазин готовых шаблонов</h1>
       </section>
+      
+    </header>
     
+    <main class="catalog-wrapper">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=pricecount.value">
@@ -92,19 +93,19 @@
         </form>
       </section>
       
-      <section class="sort">
-        <p><b>Сортировать:</b></p>
-        <ul class="sort-list">
-          <li class="sort-item-current">
-          <p>По цене:</p></li>
-          <li class="sort-item">
-          <p>По типу:</p></li>
-          <li class="sort-item">
-          <p>По названию:</p></li>
-        </ul>
-      </section>
-      
-      <section class="catalog">
+        <section class="catalog">
+          <div class="sort">
+            <p><b>Сортировать:</b></p>
+            <ul class="sort-list">
+              <li class="sort-item-current">
+              <p>По цене:</p></li>
+              <li class="sort-item">
+              <p>По типу:</p></li>
+              <li class="sort-item">
+              <p>По названию:</p></li>
+            </ul>
+          </div>
+          
         <ul class="catalog-list">
           <li class="catalog-item">
               <a href="catalog-item.html">
@@ -142,6 +143,7 @@
               </a>
           </li>
         </ul>
+      
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
@@ -170,6 +172,7 @@
         </div>    
       </section>  
       
+      <div class="footer-wrapper">
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">Вконтакте</a></li>
@@ -177,10 +180,12 @@
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
       </div>
-      <p class="footer-copyright">
+      <div class="footer-copyright">
         <b>Давайте дружить, это выгодно!</b> 
         <p>Скидка 10% для друзей из социальных сетей.</p>
-      
+      </div>
+      </div>
+        
       <section class="pop-up">
         <h2>Напишите нам</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
@@ -196,7 +201,7 @@
             <label class="visually-hidden" for="comment-field">Текст письма:</label>
             <textarea name="comment" id="comment-field" rows="10" cols="100" placeholder="В свободной форме"></textarea>
           </p>
-            <br> <input type="submit" value="Отправить">
+            <input type="submit" value="Отправить">
             <button class="modal-close" type="button">Закрыть</button>
         </form>
       </section>
