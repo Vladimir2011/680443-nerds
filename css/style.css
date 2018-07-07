@@ -703,7 +703,6 @@ input[type="radio"].visually-hidden {
   padding-bottom: 47px;
   padding-left: 53px;
   padding-right: 47px;
-  z-index: 1;
 }
 
 .contact a:active {
