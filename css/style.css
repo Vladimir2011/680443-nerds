@@ -1010,7 +1010,7 @@ input[type="radio"].visually-hidden {
 .filter-button:active,
 .filter-button:focus {
   color: rgba(0, 0, 0, 0.3);
-  background color: #d5d5d5;
+  background-color: #d5d5d5;
   box-shadow: inset 0px 3px 2px 0px #bfbfbf; 
 }
 
