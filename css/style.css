@@ -1094,7 +1094,7 @@ input[type="radio"].visually-hidden {
 .pagination-item a:active,
 .pagination-item a:focus {
   color: rgba(0, 0, 0, 0.3);
-  background color: #d5d5d5;  
+  background-color: #d5d5d5;  
 }
 
 .pagination-item-current a {
@@ -1111,7 +1111,7 @@ input[type="radio"].visually-hidden {
 
 .pagination-item-current a:active {
   color: rgba(0, 0, 0, 0.3);
-  background color: #d5d5d5;  
+  background-color: #d5d5d5;  
 }
 
 .pagination-list .next a {
