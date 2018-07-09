@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -27,9 +27,10 @@
               <a class="cart-link" href="cart.html">Корзина</a>
             </li>
           </ul>
-          </nav>
+        </nav>
       </div>
-        <h1 class="visually-hidden">Студия Нёрдс</h1>
+      
+      <h1 class="visually-hidden">Студия Нёрдс</h1>
 
         <div class="width-container-slider">
           <section class="slider">
@@ -62,7 +63,7 @@
               </ul>
             </div>  
           </section>
-      </div>
+        </div>
       </header> 
     
     
@@ -152,6 +153,7 @@
       </section>
     </main>
   </div> 
+    
     <footer class="main-footer">
       
       <section class="main-map">
@@ -224,17 +226,17 @@
           <div class="popup-wrapper">
             <p class="appointment-item">
               <span>Ваше имя:</span> <br>
-              <label class="name" for="user-name"></label>
               <input class="name-icon-user" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+              <label for="user-name"></label>
             </p>
             <p class="appointment-item">
               <span>Ваш e-mail:</span> <br>
-              <label class="email" for="user-email"></label>
               <input class="name-icon-password" id="user-email" type="text" name="email" placeholder="email@example.com">
+              <label for="user-email"></label>
             </p>
           </div>
           <p class="appointment-item">
-            <label class="text-form" for="comment-field">Текст письма:</label>
+            <label for="comment-field">Текст письма:</label>
             <textarea name="comment" id="comment-field" rows="5" cols="89" placeholder="В свободной форме"></textarea>
           </p>
             <input type="submit" class="popup-button" value="Отправить">
@@ -242,22 +244,7 @@
         </form>
       </section>
     </footer>
-    <script>
-      var link = document.querySelector(".contact-link");
-      
-      var popup = document.querySelector(".modal");
-      var close = popup.querySelector(".modal-close");
-      
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-      });
-      
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-      });
-    </script>
+    <script src="js/javascript-compress.js"></script> 
   </body>
 </html>
       

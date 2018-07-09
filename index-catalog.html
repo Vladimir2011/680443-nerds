@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -88,24 +88,34 @@
             <legend>Особенности:</legend>
             <ul class="filter-features">
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="with slider" id="slider" checked>
-                <label for="slider">Слайдер</label>
+                <label class="checkbox-container">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="with slider" id="slider-id" checked>
+                  <span class="name-network">Слайдер</span>
+                </label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="block of advantage" id="advantage">
-                <label for="advantage">Блок преимуществ</label>
+                <label class="checkbox-container">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="block of advantage" id="advantage-id" disabled>
+                  <span class="name-network">Блок преимуществ</span>
+                </label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="block of news" id="news" checked>
-                <label for="news">Новости</label>
+                <label class="checkbox-container">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="block of news" id="news-id" checked disabled>
+                  <span class="name-network">Новости</span>
+                </label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="gallery">
-                <label for="gallery">Галерея</label>
+                <label class="checkbox-container">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="gallery-id">
+                  <span class="name-network">Галерея</span>
+                </label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="with cart" id="cartt">
-                <label for="cartt">Корзина</label>
+                <label class="checkbox-container">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="with cart" id="cart-id">
+                  <span class="name-network">Корзина</span>
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -152,28 +162,22 @@
         <div class="catalog-list">
           <div class="catalog-item">
             <div class="catalog-header">
-              <span></span>
-              <span></span>
-              <span></span>
             </div>
             <img src="img/product-1.png" width="360" height="580" alt="Sedona">
             <div class="catalog-item-price">
               <b>SEDONA</b>
-              <p>Информационный сайт <br>для&nbsp;туристов</p>
+              <p class="description-info">Информационный сайт для&nbsp;туристов</p>
               <a class="button" href="#">9 900 руб.</a>
             </div>
           </div>
           
           <div class="catalog-item">
             <div class="catalog-header">
-              <span></span>
-              <span></span>
-              <span></span>
             </div>
             <img src="img/product-2.png" width="360" height="580" alt="PINK">
             <div class="catalog-item-price">
               <b>PINK APP</b>
-              <p>Продуктовый лендинг <br> приложения для IOS и Android</p>
+              <p class="description-info">Продуктовый лендинг приложения&nbsp;для IOS и Android</p>
               <a class="button" href="#">9 900 руб.</a>
             </div>
           </div>
@@ -181,57 +185,44 @@
           
           <div class="catalog-item">
             <div class="catalog-header">
-              <span></span>
-              <span></span>
-              <span></span>
             </div>
             <img src="img/product-3.png" width="360" height="580" alt="BORODINSKY">
             <div class="catalog-item-price">
               <b>BARBERSHOP</b>
-              <p>Сайт салоны красоты. <br> Для мужчин,да.</p>
+              <p class="description-info">Сайт салоны красоты. Для&nbsp;мужчин,да.</p>
               <a class="button" href="#">9 900 руб.</a>
             </div>
           </div>
           
           <div class="catalog-item">
             <div class="catalog-header">
-              <span></span>
-              <span></span>
-              <span></span>
             </div>
             <img src="img/product-4.png" width="360" height="580" alt="MISHKA">
             <div class="catalog-item-price">
               <b>MISHKA</b>
-              <p>Интернет-магазин <br> вязаных игрушек</p>
+              <p class="description-info">Интернет-магазин вязаных&nbsp;игрушек</p>
               <a class="button" href="#">9 900 руб.</a>
             </div>
           </div>
-            
-            
+              
           <div class="catalog-item">
             <div class="catalog-header">
-              <span></span>
-              <span></span>
-              <span></span>
             </div>
             <img src="img/product-5.png" width="360" height="580" alt="A+">
             <div class="catalog-item-price">
               <b>A PLUS</b>
-              <p>Лендинг курсов повышения <br> квалификации</p>
+              <p class="description-info">Лендинг курсов повышения квалификации&nbsp;</p>
               <a class="button" href="#">9 900 руб.</a>
             </div>
           </div>
           
           <div class="catalog-item">
             <div class="catalog-header">
-              <span></span>
-              <span></span>
-              <span></span>
             </div>
             <img src="img/product-6.png" width="360" height="580" alt="КВАСТ">
             <div class="catalog-item-price">
               <b>КВАСТ</b>
-              <p>Промо-сайт производителя <br> крафтового кваса</p>
+              <p class="description-info">Промо-сайт производителя крафтового&nbsp;кваса</p>
               <a class="button" href="#">9 900 руб.</a>
             </div>
           </div>
@@ -239,7 +230,7 @@
         
       
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item next"><a href="#next">СЛЕДУЮЩАЯ</a></li>
@@ -338,21 +329,6 @@
         </form>
       </section>
     </footer>
-    <script>
-      var link = document.querySelector(".contact-link");
-      
-      var popup = document.querySelector(".modal");
-      var close = popup.querySelector(".modal-close");
-      
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-      });
-      
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-      });
-    </script>
+    <script src="js/javascript-compress.js"></script> 
   </body>
 </html>
