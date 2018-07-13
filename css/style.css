@@ -892,6 +892,7 @@ input[type="radio"].visually-hidden {
 
 /*
 @keyframes bounce {
+
   0% {
     transform: translateY(-2000px);
   }
@@ -911,6 +912,7 @@ input[type="radio"].visually-hidden {
 
 
 @keyframes shake {
+
   0%,
   100% {
     transform: translateX(0);
@@ -1677,14 +1679,12 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-price {
   position: absolute;
-  
   top: 358px;
-  width: auto;
-  height: auto;
   
   text-align: center;
   margin-top: 30px;
   padding-top: 25px;
+  padding-bottom: 38px;
   
   background-color: #eeeeee;
   display: none;
@@ -1697,8 +1697,6 @@ input[type="radio"].visually-hidden {
   position: absolute;
   
   top: 358px;
-  width: 360px;
-  height: 206px;
   
   text-align: center;
   margin-top: 30px;
