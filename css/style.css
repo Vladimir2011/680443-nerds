@@ -67,7 +67,7 @@ input[type="radio"].visually-hidden {
 
   -webkit-clip-path: inset(100%);
 
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -108,8 +108,8 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   
   font-size: 16px;
   line-height: 30px;
@@ -118,10 +118,6 @@ input[type="radio"].visually-hidden {
   
   padding-top: 48px;
   padding-bottom: 15px;
-/*
-  margin-left: 0px;
-  margin-right: 0px;
-*/
 }
   
 .site-navigation-wrapper {
@@ -129,8 +125,8 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
 }
 
@@ -139,7 +135,7 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   
   width: 640px;
   list-style: none;
@@ -152,8 +148,8 @@ input[type="radio"].visually-hidden {
 .site-navigation a {
   padding: 18px 23px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .cart {
@@ -161,8 +157,8 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   
   max-width: 160px;
   list-style: none;
@@ -237,7 +233,7 @@ input[type="radio"].visually-hidden {
 
 .container-slider {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .slider {
@@ -257,8 +253,8 @@ input[type="radio"].visually-hidden {
   text-align: center;
   font-size: 0;
   -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .slider-controls label {
@@ -348,6 +344,10 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
+.contact .phone {
+  padding-top: 16px;
+}
+
 .slider-item-button {
   display: block;
   
@@ -376,7 +376,7 @@ input[type="radio"].visually-hidden {
   
   background-color: #d7373b;
   -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
-          box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .feature-list h3 {
@@ -444,7 +444,7 @@ input[type="radio"].visually-hidden {
 
 .assortment a:active {
   -webkit-box-shadow: inset 0px 3px 2px 0px #c13135;
-          box-shadow: inset 0px 3px 2px 0px #c13135;
+  box-shadow: inset 0px 3px 2px 0px #c13135;
 }
 
 .assortment .button-apps {
@@ -468,7 +468,7 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
   background-color: #00aa62;
   -webkit-box-shadow: inset 0px 3px 2px 0px #009958;
-          box-shadow: inset 0px 3px 2px 0px #009958;
+  box-shadow: inset 0px 3px 2px 0px #009958;
 }
 
 .assortment .button-pres {
@@ -492,7 +492,7 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
   background-color: #e5a722;
   -webkit-box-shadow: inset 0px 3px 2px 0px #ce961f;
-          box-shadow: inset 0px 3px 2px 0px #ce961f;
+  box-shadow: inset 0px 3px 2px 0px #ce961f;
 }
 
 .assortment-item p {
@@ -590,8 +590,8 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   
   list-style: none;
   font-size: 45px;
@@ -614,8 +614,8 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   
   list-style: none;
   font-size: 16px;
@@ -648,10 +648,10 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   
   margin: 0;
   padding: 0;
@@ -683,9 +683,9 @@ input[type="radio"].visually-hidden {
  
   -webkit-transform: rotate(90deg);
  
-      -ms-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
  
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   height: 2px;
   background-color: #eeeeee;
 }
@@ -763,7 +763,7 @@ input[type="radio"].visually-hidden {
 
 .contact a:active {
   -webkit-box-shadow: inset 0px 3px 2px 0px #c13135;
-          box-shadow: inset 0px 3px 2px 0px #c13135; 
+  box-shadow: inset 0px 3px 2px 0px #c13135; 
 }
 
 .contact h3 {
@@ -793,8 +793,8 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .footer-social ul {
@@ -802,10 +802,10 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   
   width: 260px;
   
@@ -821,11 +821,11 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   
   width: 79px;
   height: 79px;
@@ -841,7 +841,7 @@ input[type="radio"].visually-hidden {
 .social-item .button:active {
   background-color: #d7373b;
   -webkit-box-shadow:inset 0px 3px 2px 0px #c13135;
-          box-shadow:inset 0px 3px 2px 0px #c13135;
+  box-shadow:inset 0px 3px 2px 0px #c13135;
 }
 
 .social-item .button:active path {
@@ -890,6 +890,7 @@ input[type="radio"].visually-hidden {
   color: #e74246;
 }
 
+/*
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
@@ -907,6 +908,7 @@ input[type="radio"].visually-hidden {
     transform: translateY(0);
   }
 }
+
 
 @keyframes shake {
   0%,
@@ -929,6 +931,7 @@ input[type="radio"].visually-hidden {
     transform: translateX(10px);
   }
 }
+*/
 
 .modal {
   position: fixed;
@@ -939,7 +942,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   background-position: 0 0;
   -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-          box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
 .modal-show {
@@ -953,9 +956,10 @@ input[type="radio"].visually-hidden {
 }
 
 .popup {
-  left: 12%;
-  top: 5px;
-  
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1px;
+  z-index: 1;
   padding-top: 70px;
   padding-left: 100px;
   padding-right: 100px;
@@ -976,8 +980,8 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .modal span {
@@ -989,7 +993,7 @@ input[type="radio"].visually-hidden {
 
 .write-us input[type="text"] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 360px;
   margin-top: 5px;
   padding: 10px 15px;
@@ -1062,7 +1066,7 @@ input[type="radio"].visually-hidden {
 .popup-button:focus {
   background-color: #d7373b;
   -webkit-box-shadow: inset 0px 3px 2px 0px #c13135;
-          box-shadow: inset 0px 3px 2px 0px #c13135;
+  box-shadow: inset 0px 3px 2px 0px #c13135;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1139,7 +1143,7 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
   -webkit-box-shadow: inset 0px 3px 2px 0px #bfbfbf;
-          box-shadow: inset 0px 3px 2px 0px #bfbfbf; 
+  box-shadow: inset 0px 3px 2px 0px #bfbfbf; 
 }
 
 .sort {
@@ -1196,7 +1200,7 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   
   padding: 0;
   margin: 0;
@@ -1216,7 +1220,7 @@ input[type="radio"].visually-hidden {
 .pagination-item a {
   display: block;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 14px 19px;
   
   border-radius: 1px;
@@ -1233,7 +1237,7 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
   -webkit-box-shadow: inset 0px 3px 2px 0px #bfbfbf;
-          box-shadow: inset 0px 3px 2px 0px #bfbfbf;
+  box-shadow: inset 0px 3px 2px 0px #bfbfbf;
 }
 
 .pagination-item-current {
@@ -1322,7 +1326,7 @@ input[type="radio"].visually-hidden {
   border: 8px solid #ffffff;
   background-color: #ababab;
   -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
-          box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1373,8 +1377,8 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .sort-list {
@@ -1383,8 +1387,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   width: 380px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   list-style: none;
   
   margin-top: 5px;
@@ -1395,8 +1399,8 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 400px;
 }
 
@@ -1406,8 +1410,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   width: 60px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; 
+  -ms-flex-pack: justify;
+  justify-content: space-between; 
 }
 
 .icon-up a {
@@ -1462,57 +1466,6 @@ input[type="radio"].visually-hidden {
   line-height: 20px;
   padding-left: 36px;
 }
-
-/*
-.filter-option label {
-  position: relative;
-
-  display: block;
-
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.filter-input-checkbox + label::after {
-  content: "";
-  position: absolute;
-  left: -35px;
-  top: 0;
-  
-  width: 28px;
-  height: 23px;
-
-  background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  
-  opacity: 0.4;
-}
-
-.filter-input-checkbox:checked + label::after {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: -35px;
-  
-  width: 28px;
-  height: 23px;
-  
-  background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  
-  opacity: 0.4;
-}
-
-.filter-option:hover label::after {
-  opacity: 1;
-}
-*/
 
 .filter-radio {
   margin-bottom: 19px;
@@ -1683,7 +1636,7 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   
   margin: 0;
   margin-top: 27px;
@@ -1737,7 +1690,7 @@ input[type="radio"].visually-hidden {
   display: none;
   cursor: pointer;
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .catalog-item:hover .catalog-item-price {
@@ -1780,5 +1733,5 @@ input[type="radio"].visually-hidden {
 .catalog-item-price a:active,
 .catalog-item-price a:focus {
   -webkit-box-shadow: inset 0px 3px 2px 0px #c13135;
-          box-shadow: inset 0px 3px 2px 0px #c13135; 
+  box-shadow: inset 0px 3px 2px 0px #c13135; 
 }
